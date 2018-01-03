@@ -1,6 +1,6 @@
 # Gluon
 
-整理中
+重置中
 
 已整理：
 1. from_strat
