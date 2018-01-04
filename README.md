@@ -1,20 +1,25 @@
 # Gluon
 
-整理中
+重置中
 
-已整理：
+计划完成
 1. from_strat
 - 1. Gradient
 - 2. KNN
 - 3. MLP
 - 4. LeNet
+
 2. cifar10_gluon
 - 1. MLP
 - 2. LeNet
-- 3. GoogleNet(模型直接用了沐神的，需要对cifar10数据集resize，暂时不打算写，仅供参考)
+- 3. GoogleNet
 - 4. ResNet 10
 - 5. ResNet 50
-- 6. ResNet 50(数据增强)
+- 6. ResNet 50(data_augmentation)
+
+3. detection
+
+4. image_caption
 
 运行notebook需要cifar10官网下载的python数据集
 
