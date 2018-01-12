@@ -28,7 +28,7 @@
 
 2. cifar10_gluon
 
-    通过gluon逐步构建复杂的卷积神经网络实现对cifar10的高精度分类，详细参数见文件夹内README.md。
+    通过gluon逐步构建复杂的卷积神经网络实现对cifar10的高精度分类(单模型95以上)，详细参数以及精度对比见文件夹内README.md。
 
     - mlp：多层感知机
 
@@ -86,7 +86,7 @@ keras的个人学习用notebook正在制作中，参考至[BIGBALLON/cifar-10-cn
 4. [Conditional Generative Adversarial Nets][14]
 
 [1]: https://github.com/BIGBALLON/cifar-10-cnn
-[2]: https://www.bilibili.com/video/av14327359/?from=search&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;seid=4696511599201035761
+[2]: https://www.bilibili.com/video/av14327359/?from=search&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;seid=4696511599201035761
 [3]: https://arxiv.org/abs/1512.03385
 [4]: https://arxiv.org/abs/1603.05027
 [5]: https://arxiv.org/abs/1605.07146
