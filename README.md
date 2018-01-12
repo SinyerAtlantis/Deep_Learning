@@ -81,12 +81,15 @@ keras的个人学习用notebook正在制作中，参考至[BIGBALLON/cifar-10-cn
 扩展阅读：
 
 1. [ImageNet Classification with Deep Convolutional Neural Networks][9] (Alexnet)
-2. [Rich feature hierarchies for accurate object detection and semantic segmentation][10] (RCNN)
-3. [Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks][11]
-4. [Conditional Generative Adversarial Nets][14]
+2. [Going Deeper with Convolutions][16] (Googlenet)
+3. [Very Deep Convolutional Networks for Large-Scale Image Recognition][17] (VGG)
+4. [Rich feature hierarchies for accurate object detection and semantic segmentation][10] (RCNN)
+5. [Fast R-CNN][19]
+6. [Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks][11]
+7. [Conditional Generative Adversarial Nets][14]
 
 [1]: https://github.com/BIGBALLON/cifar-10-cnn
-[2]: https://www.bilibili.com/video/av14327359/?from=search&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;seid=4696511599201035761
+[2]: https://www.bilibili.com/video/av14327359/?from=search&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;seid=4696511599201035761
 [3]: https://arxiv.org/abs/1512.03385
 [4]: https://arxiv.org/abs/1603.05027
 [5]: https://arxiv.org/abs/1605.07146
@@ -100,3 +103,6 @@ keras的个人学习用notebook正在制作中，参考至[BIGBALLON/cifar-10-cn
 [13]: https://arxiv.org/abs/1701.07274
 [14]: https://arxiv.org/abs/1411.1784
 [15]: https://arxiv.org/abs/1406.2661
+[16]: https://arxiv.org/abs/1409.4842
+[17]: https://arxiv.org/abs/1409.1556
+[18]: https://arxiv.org/abs/1504.08083
