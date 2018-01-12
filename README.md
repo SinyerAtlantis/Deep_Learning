@@ -84,7 +84,7 @@ keras的个人学习用notebook正在制作中，参考至[BIGBALLON/cifar-10-cn
 2. [Going Deeper with Convolutions][16] (Googlenet)
 3. [Very Deep Convolutional Networks for Large-Scale Image Recognition][17] (VGG)
 4. [Rich feature hierarchies for accurate object detection and semantic segmentation][10] (RCNN)
-5. [Fast R-CNN][19]
+5. [Fast R-CNN][18]
 6. [Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks][11]
 7. [Conditional Generative Adversarial Nets][14]
 
