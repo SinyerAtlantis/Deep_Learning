@@ -1,8 +1,8 @@
 # Gluon
 
-制作进行中
+全部重置中
 
-已完成：
+
 1. from_strat
 - 1. Gradient
 - 2. Gradient_Batch
