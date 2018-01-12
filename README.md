@@ -31,11 +31,17 @@
     通过gluon逐步构建复杂的卷积神经网络实现对cifar10的高精度分类，详细参数见文件夹内README.md。
 
     - mlp：多层感知机
+
     - lenet：调整了一点结构的lenet
+
     - lenet(data augmentation)：标准数据增强后的lenet
+
     - resnet50：前置batch normalization和relu的resnet50
+
     - resnet50(data augmentation)：加上标准数据集增强
-    - wide resnet(16*8)：wrn实现高精度分类
+
+    - wide resnet(16\*8)：wrn实现高精度分类
+
     - kaggle(wrn)：用于kaggle cifar10比赛用的脚本
 
 3. detection
@@ -79,7 +85,7 @@ keras的个人学习用notebook正在制作中，参考至[BIGBALLON/cifar-10-cn
 4. [Conditional Generative Adversarial Nets][14]
 
 [1]: https://github.com/BIGBALLON/cifar-10-cnn
-[2]: https://www.bilibili.com/video/av14327359/?from=search&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;seid=4696511599201035761
+[2]: https://www.bilibili.com/video/av14327359/?from=search&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;seid=4696511599201035761
 [3]: https://arxiv.org/abs/1512.03385
 [4]: https://arxiv.org/abs/1603.05027
 [5]: https://arxiv.org/abs/1605.07146
