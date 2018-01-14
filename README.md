@@ -10,7 +10,7 @@
 
 1. from_strat
 
-    从零逐步实现图像分类器，
+    从零逐步实现图像分类器
 
     - Gradient：梯度下降法(Gradient descend)
 
@@ -28,7 +28,7 @@
 
 2. cifar10_gluon
 
-    通过gluon逐步构建复杂的卷积神经网络实现对cifar10的高精度分类(单模型95以上)，详细参数以及精度对比见文件夹内README.md。
+    通过gluon逐步构建复杂的卷积神经网络实现对cifar10的高精度分类(单模型95以上)，详细参数以及精度对比见文件夹内README.md
 
     - mlp：多层感知机
 
@@ -38,7 +38,7 @@
 
     - resnet50：前置batch normalization和relu的resnet50
 
-    - resnet50(data augmentation)：加上标准数据集增强
+    - resnet50(data augmentation)：加上标准数据集增强的resnet50
 
     - wide resnet(16\*8)：wrn实现高精度分类
 
@@ -84,12 +84,12 @@ keras的个人学习用notebook正在制作中，参考至[BIGBALLON/cifar-10-cn
 2. [Going Deeper with Convolutions][16] (Googlenet)
 3. [Very Deep Convolutional Networks for Large-Scale Image Recognition][17] (VGG)
 4. [Rich feature hierarchies for accurate object detection and semantic segmentation][10] (RCNN)
-5. [Fast R-CNN][19]
+5. [Fast R-CNN][18]
 6. [Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks][11]
 7. [Conditional Generative Adversarial Nets][14]
 
 [1]: https://github.com/BIGBALLON/cifar-10-cnn
-[2]: https://www.bilibili.com/video/av14327359/?from=search&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;seid=4696511599201035761
+[2]: https://www.bilibili.com/video/av14327359/?from=search&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;seid=4696511599201035761
 [3]: https://arxiv.org/abs/1512.03385
 [4]: https://arxiv.org/abs/1603.05027
 [5]: https://arxiv.org/abs/1605.07146
