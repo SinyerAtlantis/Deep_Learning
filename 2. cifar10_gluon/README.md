@@ -8,7 +8,7 @@
 | 3. lenet_aug        | 120  | 81.40 | 10.8      |
 | 4. resnet50         | 60   | 88.07 | 30.1      |
 | 5. resnet50_aug     | 160  | 94.20 | 47.8      |
-| 6. wide_resnet16\*8 | 160  |       |           |
+| 6. wide_resnet16\*8 | 160  | 95.53 | 125.2     |
 
 - batch_size：128
 - GPU：GTX 1070
