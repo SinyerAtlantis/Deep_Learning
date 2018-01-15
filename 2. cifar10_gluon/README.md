@@ -43,7 +43,7 @@
 
 - 比赛结果
 
-    ![](Screenshot from 2018-01-16 05-40-19.png)
+    ![](./Screenshot from 2018-01-16 05-40-19.png)
 
 - load_data部分以及生成用于比赛提交结果的文件均参考沐神代码，具体可见[实战Kaggle比赛——使用Gluon对原始图像文件分类（CIFAR-10）](http://zh.gluon.ai/chapter_computer-vision/kaggle-gluon-cifar10.html)
 
