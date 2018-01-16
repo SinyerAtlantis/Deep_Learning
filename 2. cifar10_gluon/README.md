@@ -9,6 +9,8 @@
 | 4. resnet50         | 60   | 88.07 | 30.1      |
 | 5. resnet50_aug     | 160  | 94.20 | 47.8      |
 | 6. wide_resnet16\*8 | 160  | 95.84 | 125.2     |
+| 7. kaggle_single    | 160  | 95.96 | 118       |
+| 8. kaggle_ensemble  | -    | 96.96 | -         |
 
 - batch_size：128
 - GPU：GTX 1070
@@ -41,9 +43,17 @@
 
     4. 梯度下降：nesterov加速的sgd，momentum为0.9
 
-- 比赛结果(单模型)
+- 比赛结果
 
-    ![](./1.png)
+    1. 单模型：95.96
+
+        ![](./1.png)
+
+    2. ensemble：96.96
+
+        ![](./2.png)
+
+        注：ensemble的代码单独给出，ensemble的其他模型均来自gluon社区小伙伴yinglang以及sherlock的分享，由于是刷分用途的方法，个人对这个兴趣不大，所以也不详细讨论深究了，详细代码以及讨论可见[动手玩Kaggle比赛——使用Gluon对原始图像文件分类(CIFAR-10) 讨论区](https://discuss.gluon.ai/t/topic/1545/397)
 
 - load_data部分以及生成用于比赛提交结果的文件均参考沐神代码，具体可见[实战Kaggle比赛——使用Gluon对原始图像文件分类（CIFAR-10）](http://zh.gluon.ai/chapter_computer-vision/kaggle-gluon-cifar10.html)
 
