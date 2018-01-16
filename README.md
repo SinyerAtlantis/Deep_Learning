@@ -48,7 +48,7 @@
 
     - kaggle(Imagenet 120dogs)：resnet18
 
-      鉴于思想与cifar10基本一致，加上训练较为耗时，且若希望比赛取得好的成绩，需要有外部数据集、迁移学习等工程性很强的方法，个人觉得不适合前期花费时间学习，仅跑了沐神的demo
+      鉴于思想与cifar10基本一致，加上训练较为耗时，且若希望比赛取得好的成绩，需要有外部数据集、迁移学习等工程性很强的方法，个人觉得不适合前期花费时间学习，仅跑了沐神的demo，详情可见[实战Kaggle比赛——使用Gluon识别120种狗 (ImageNet Dogs)](http://zh.gluon.ai/chapter_computer-vision/kaggle-gluon-dog.html)
 
 3. detection
 
