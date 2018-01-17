@@ -50,6 +50,10 @@
 
       鉴于思想与cifar10基本一致，加上训练较为耗时，且若希望比赛取得好的成绩，需要有外部数据集、迁移学习等工程性很强的方法，个人觉得不适合前期花费时间学习，仅跑了沐神的demo，详情可见[实战Kaggle比赛——使用Gluon识别120种狗 (ImageNet Dogs)](http://zh.gluon.ai/chapter_computer-vision/kaggle-gluon-dog.html)
 
+    - kaggle(house price)：房价预测，一个正在进行的比赛，沐神课程初期的一个小练习
+
+      由于同属于kaggle比赛，且训练很快，可以随手跑一跑，代码为一个简单调参后的demo，详细可参考[实战Kaggle比赛——使用Gluon预测房价和K折交叉验证](http://zh.gluon.ai/chapter_supervised-learning/kaggle-gluon-kfold.html)
+
 3. detection
 
     正在制作中
@@ -95,7 +99,7 @@ keras的个人学习用notebook正在制作中，参考至[BIGBALLON/cifar-10-cn
 7. [Conditional Generative Adversarial Nets][14]
 
 [1]: https://github.com/BIGBALLON/cifar-10-cnn
-[2]: https://www.bilibili.com/video/av14327359/?from=search&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;seid=4696511599201035761
+[2]: https://www.bilibili.com/video/av14327359/?from=search&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;seid=4696511599201035761
 [3]: https://arxiv.org/abs/1512.03385
 [4]: https://arxiv.org/abs/1603.05027
 [5]: https://arxiv.org/abs/1605.07146

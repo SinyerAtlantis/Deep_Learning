@@ -47,11 +47,11 @@
 
     1. 单模型：95.96
 
-        ![](./1.png)
+        ![](./single.png)
 
     2. ensemble：96.98
 
-        ![](./2.png)
+        ![](./ensemble.png)
 
         注：ensemble的代码单独给出，ensemble的其他模型数据均来自gluon社区小伙伴yinglang以及sherlock的分享，由衷感谢！由于是刷分用途的方法，个人对此兴趣不大，所以不详细讨论深究了，详细代码以及讨论可见[动手玩Kaggle比赛——使用Gluon对原始图像文件分类(CIFAR-10) 讨论区](https://discuss.gluon.ai/t/topic/1545/397)
 
