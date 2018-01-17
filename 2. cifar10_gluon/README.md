@@ -49,11 +49,13 @@
 
         ![](./1.png)
 
-    2. ensemble：96.96
+    2. ensemble：96.98
 
         ![](./2.png)
 
-        注：ensemble的代码单独给出，ensemble的其他模型均来自gluon社区小伙伴yinglang以及sherlock的分享，由于是刷分用途的方法，个人对这个兴趣不大，所以也不详细讨论深究了，详细代码以及讨论可见[动手玩Kaggle比赛——使用Gluon对原始图像文件分类(CIFAR-10) 讨论区](https://discuss.gluon.ai/t/topic/1545/397)
+        注：ensemble的代码单独给出，ensemble的其他模型数据均来自gluon社区小伙伴yinglang以及sherlock的分享，由衷感谢！由于是刷分用途的方法，个人对此兴趣不大，所以不详细讨论深究了，详细代码以及讨论可见[动手玩Kaggle比赛——使用Gluon对原始图像文件分类(CIFAR-10) 讨论区](https://discuss.gluon.ai/t/topic/1545/397)
+
+        ensemble部分是在mac上跑的，代码参考至yinglang的[github](https://github.com/yinglang/CIFAR10_mxnet/blob/master/CIFAR10_train.md)，未经优化，细节部分还需根据具体情况调整
 
 - load_data部分以及生成用于比赛提交结果的文件均参考沐神代码，具体可见[实战Kaggle比赛——使用Gluon对原始图像文件分类（CIFAR-10）](http://zh.gluon.ai/chapter_computer-vision/kaggle-gluon-cifar10.html)
 
