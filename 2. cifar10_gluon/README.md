@@ -10,7 +10,7 @@
 | 5. resnet50_aug     | 160  | 94.20 | 47.8      |
 | 6. wide_resnet16\*8 | 160  | 95.84 | 125.2     |
 | 7. kaggle_single    | 160  | 95.96 | 118       |
-| 8. kaggle_ensemble  | -    | 96.96 | -         |
+| 8. kaggle_ensemble  | -    | 96.98 | -         |
 
 - batch_size：128
 - GPU：GTX 1070
