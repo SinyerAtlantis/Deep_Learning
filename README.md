@@ -4,9 +4,7 @@
 
 代码参考了沐神[动手学深度学习][2]课程，以及Wei Li通过keras的实现[BIGBALLON/cifar-10-cnn][1]。沐神辛苦开设的高质量深度学习课程和Wei Li高质量的keras代码给了我很多启发，大大加速了我对深度学习的学习，由衷感谢！
 
-以下notebook仅需要按照沐神课程逐步安装gpu版的mxnet及其依赖便可直接运行。cifar10数据集在官网自行下载解压后将load_cifar函数的route参数改为存放解压文件的绝对路径即可，下载地址如下：
-
-[CIFAR-10 python version](http://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz)
+以下notebook仅需要按照沐神课程逐步安装gpu版的mxnet及其依赖便可直接运行
 
 1. from_strat
 
@@ -26,9 +24,11 @@
 
     - LeNet：用numpy及autograd实现LeNet分类cifar10数据集
 
-2. cifar10_gluon
+2. cnn_cifar10
 
     通过gluon逐步构建复杂的卷积神经网络实现对cifar10的高精度分类(单模型95以上)，详细参数以及精度对比见文件夹内README.md
+
+    cifar10数据集在官网自行下载解压后将load_cifar函数的route参数改为存放解压文件的绝对路径即可，下载地址：[CIFAR-10 python version](http://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz)
 
     - mlp：多层感知机
 
@@ -44,33 +44,44 @@
 
     - kaggle(cifar10)：用wrn16\*8模型参加kaggle cifar10比赛
 
-      单模型精度95.96，ensemble后精度96.98
+      单模型精度95.96，ensemble后精度96.98。单模型精度即可击败原比赛榜单第一
 
     - kaggle(Imagenet 120dogs)：resnet18
 
-      鉴于思想与cifar10基本一致，加上训练较为耗时，且若希望比赛取得好的成绩，需要有外部数据集、迁移学习等工程性很强的方法，个人觉得不适合前期花费时间学习，仅跑了沐神的demo，详情可见[实战Kaggle比赛——使用Gluon识别120种狗 (ImageNet Dogs)](http://zh.gluon.ai/chapter_computer-vision/kaggle-gluon-dog.html)
+      鉴于思想与cifar10基本一致，加上训练较为耗时，且若希望比赛取得好的成绩，需要有外部数据集、迁移学习等工程性很强的方法，个人觉得不适合前期花费时间学习，仅跑了沐神的demo，详情可见[实战Kaggle比赛——使用Gluon识别120种狗 (ImageNet Dogs)](http://zh.gluon.ai/chapter_computer-vision/kaggle-gluon-dog.html)，最后成绩为0.28
 
     - kaggle(house price)：房价预测，一个正在进行的比赛，沐神课程初期的一个小练习
 
-      由于同属于kaggle比赛，且训练很快，可以随手跑一跑，代码为一个简单调参后的demo，详细可参考[实战Kaggle比赛——使用Gluon预测房价和K折交叉验证](http://zh.gluon.ai/chapter_supervised-learning/kaggle-gluon-kfold.html)
+      由于同属于kaggle比赛，且训练很快，可以随手跑一跑，代码为一个简单调参后的demo，精度应在0.117左右，名次约在16%，传统机器学习方法应该可以获得更好的成绩，详细可参考[实战Kaggle比赛——使用Gluon预测房价和K折交叉验证](http://zh.gluon.ai/chapter_supervised-learning/kaggle-gluon-kfold.html)
 
-3. detection
+3. neural_style
 
-    正在制作中
+    基于VGG19预训练模型进行迁移学习实现图片风格样式迁移
+
+    - fine tuning：迁移学习
+    - neural style：样式迁移
+
+4. detection
+
+    目标检测与语义分割
+
+    - faster rcnn
 
     - ssd：Single Shot MultiBox Detector
-
+    - fcn
     - mask rcnn
 
-4. image_caption
+5. gan
 
-    正在制作中
+    生成对抗网络
 
-5. GAN
+6. rnn
 
-    规划中
+    - 基本循环神经网络
+    - 门控循环神经网络
+    - LSTM
 
-6. Reinforcement learning
+7. reinforcement_learning
 
     规划中
 
@@ -99,7 +110,7 @@ keras的个人学习用notebook正在制作中，参考至[BIGBALLON/cifar-10-cn
 7. [Conditional Generative Adversarial Nets][14]
 
 [1]: https://github.com/BIGBALLON/cifar-10-cnn
-[2]: https://www.bilibili.com/video/av14327359/?from=search&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;seid=4696511599201035761
+[2]: https://www.bilibili.com/video/av14327359/?from=search&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;seid=4696511599201035761
 [3]: https://arxiv.org/abs/1512.03385
 [4]: https://arxiv.org/abs/1603.05027
 [5]: https://arxiv.org/abs/1605.07146
