@@ -1,6 +1,6 @@
 ### kaggle: Dog Breed Identification
 
-这部分所有代码均以@ypw 杨培文的代码为基础，具体请见[github](https://github.com/ypwhs/DogBreed_gluon)，感谢培神的无私奉献。
+这部分所有代码均以@ypw 杨培文的代码为基础，具体请见培神的[github](https://github.com/ypwhs/DogBreed_gluon)，感谢培神的无私奉献。
 
 由于培神原来的代码我的小机器实在难以跑动，很多地方卡内存和显存，所以我在培神代码的基础上做了一些杂乱的改变和精简。实现是基于单GTX1070的，多卡或者其他配置可能需要一定的改动。
 
