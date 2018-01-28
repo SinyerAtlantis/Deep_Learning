@@ -7,7 +7,7 @@
 复现结果仅需下载以下数据集，并解压到notebook所在的文件夹（同一目录下），按顺序运行notebook即可，若抽取feature部分卡内存或显存，可以将两个抽取feature的部分分别运行，运行完一部分后restart跑另一部分。
 
 - kaggle比赛数据集：官网的4个文件均需要
-- [Stanford Dogs Dataset](http://vision.stanford.edu/aditya86/ImageNetDogs/main.html)：仅需Images即可（http://vision.stanford.edu/aditya86/ImageNetDogs/images.tar）
+- [Stanford Dogs Dataset](http://vision.stanford.edu/aditya86/ImageNetDogs/main.html)：仅需Images即可(http://vision.stanford.edu/aditya86/ImageNetDogs/images.tar)
 
 比赛结果：未结束，可能会有更新
 
