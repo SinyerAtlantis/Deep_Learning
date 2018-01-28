@@ -58,7 +58,7 @@
 
     - kaggle(dog breed identification)：kaggle120种狗分类比赛
 
-      基于inception v3和resnet152 v1预训练模型通过迁移学习训练模型分类120种狗，使用原始数据集精度可达0.2673，使用stanford数据集精度可达0.00419，具体细节见文件夹内README.md
+      基于inception v3和resnet152 v1预训练模型通过迁移学习训练模型分类120种狗，使用原始数据集精度可达0.2673，使用stanford数据集精度可达0.0038，具体细节见文件夹内README.md
 
 4. detection
 
@@ -109,7 +109,7 @@ keras的个人学习用notebook正在制作中，参考至[BIGBALLON/cifar-10-cn
 7. [Conditional Generative Adversarial Nets][14]
 
 [1]: https://github.com/BIGBALLON/cifar-10-cnn
-[2]: https://www.bilibili.com/video/av14327359/?from=search&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;seid=4696511599201035761
+[2]: https://www.bilibili.com/video/av14327359/?from=search&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;seid=4696511599201035761
 [3]: https://arxiv.org/abs/1512.03385
 [4]: https://arxiv.org/abs/1603.05027
 [5]: https://arxiv.org/abs/1605.07146
