@@ -1,14 +1,12 @@
-# 深度学习
+# 基本深度学习模型
 
-基于mxnet和gluon逐步实现深度学习常用模型
+基于mxnet和gluon实现深度学习常用基本模型
 
-代码参考了沐神[动手学深度学习][2]课程，以及Wei Li通过keras的实现[BIGBALLON/cifar-10-cnn][1]。沐神辛苦开设的高质量深度学习课程和Wei Li高质量的keras代码给了我很多启发，大大加速了我对深度学习的学习，由衷感谢！
+代码主要来自李沐博士与Aston博士开设的[动手学深度学习][2]课程以及mxnet官方[tutorial][19]。由衷感谢沐神和mxnet小伙伴们的无私奉献！
 
 以下notebook仅需要按照沐神课程逐步安装gpu版的mxnet及其依赖便可直接运行
 
-1. from_strat
-
-    从零逐步实现图像分类器
+1. from_strat：从零实现一个简单的图像分类器
 
     - Gradient：梯度下降法(Gradient descend)
 
@@ -28,11 +26,13 @@
 
     通过gluon逐步构建复杂的卷积神经网络实现对cifar10的高精度分类(单模型95以上)，详细参数以及精度对比见文件夹内README.md
 
+    代码参考了Wei Li通过keras的实现[BIGBALLON/cifar-10-cnn][1]。
+
     cifar10数据集在官网自行下载解压后将load_cifar函数的route参数改为存放解压文件的绝对路径即可，下载地址：[CIFAR-10 python version](http://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz)
 
     - mlp：多层感知机
 
-    - lenet：调整了一点结构的lenet
+    - lenet：调整了结构的lenet
 
     - lenet(data augmentation)：标准数据增强后的lenet
 
@@ -46,45 +46,63 @@
 
       单模型精度95.96，ensemble后精度96.98。单模型精度即可击败原比赛榜单第一
 
-    - kaggle(house price)：房价预测，一个正在进行的比赛，沐神课程初期的一个小练习
+    - kaggle(house price)：房价预测，沐神课程初期的一个小练习
 
       由于同属于kaggle比赛，且训练很快，可以随手跑一跑，代码为一个简单调参后的demo，精度应在0.117左右，名次约在16%，传统机器学习方法应该可以获得更好的成绩，详细可参考[实战Kaggle比赛——使用Gluon预测房价和K折交叉验证](http://zh.gluon.ai/chapter_supervised-learning/kaggle-gluon-kfold.html)
 
-3. transfer_learning
+3. transfer_learning：迁移学习
+
+    - prediction：利用预训练模型直接完成分类任务（待补）
+
+    - fine tuning：微调预训练模型完成热狗分类
 
     - neural style：样式迁移
 
-      基于VGG19预训练模型进行迁移学习实现图片风格样式迁移
+      基于VGG19预训练模型实现图片风格样式迁移
 
     - kaggle(dog breed identification)：kaggle120种狗分类比赛
 
       基于inception v3和resnet152 v1预训练模型通过迁移学习训练模型分类120种狗，使用原始数据集精度可达0.2673，使用stanford数据集精度可达0.0038，具体细节见文件夹内README.md
 
-4. detection
+4. gan（draft）
 
-    目标检测与语义分割
+    generative adversarial networks / 生成对抗网络
+
+    - conv_gan
+
+      使用dcgan(deep convolutional gan)生成人脸
+
+    - condition_gan
+
+      使用conditional gan生成mnist数字
+
+    - p2p_gan（draft）
+
+    - wgan（待补）
+
+    - so on ...
+
+5. detection（draft）
+
+    object detection and semantic segmentation / 目标检测与语义分割
 
     - faster rcnn
 
     - ssd：Single Shot MultiBox Detector
+
     - fcn
+
     - mask rcnn
 
-5. gan
+6. rnn：基本循环神经网络（draft）
 
-    生成对抗网络
+    - rnn_base
 
-6. rnn
+7. rl：reinforcement learning（draft）
 
-    - 基本循环神经网络
-    - 门控循环神经网络
-    - LSTM
+    - dqn
 
-7. reinforcement_learning
-
-    规划中
-
-keras的个人学习用notebook正在制作中，参考至[BIGBALLON/cifar-10-cnn][1]，更新速度较慢。
+    - ddqn
 
 相关论文：
 
@@ -109,7 +127,7 @@ keras的个人学习用notebook正在制作中，参考至[BIGBALLON/cifar-10-cn
 7. [Conditional Generative Adversarial Nets][14]
 
 [1]: https://github.com/BIGBALLON/cifar-10-cnn
-[2]: https://www.bilibili.com/video/av14327359/?from=search&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;seid=4696511599201035761
+[2]: https://www.bilibili.com/video/av14327359/?from=search&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;seid=4696511599201035761
 [3]: https://arxiv.org/abs/1512.03385
 [4]: https://arxiv.org/abs/1603.05027
 [5]: https://arxiv.org/abs/1605.07146
@@ -126,3 +144,4 @@ keras的个人学习用notebook正在制作中，参考至[BIGBALLON/cifar-10-cn
 [16]: https://arxiv.org/abs/1409.4842
 [17]: https://arxiv.org/abs/1409.1556
 [18]: https://arxiv.org/abs/1504.08083
+[19]: https://github.com/zackchase/mxnet-the-straight-dope
