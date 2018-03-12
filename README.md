@@ -2,7 +2,9 @@
 
 基于mxnet和gluon实现深度学习常用基本模型
 
-代码主要来自李沐博士与Aston博士开设的[动手学深度学习][2]课程以及mxnet官方[tutorial][19]。由衷感谢沐神和mxnet小伙伴们的无私奉献！
+代码主要来自李沐博士与Aston博士开设的[动手学深度学习][2]课程以及mxnet官方[tutorial][19]
+
+由衷感谢沐神和mxnet小伙伴们的无私奉献！
 
 以下notebook仅需要按照沐神课程逐步安装gpu版的mxnet及其依赖便可直接运行
 
@@ -26,7 +28,7 @@
 
     通过gluon逐步构建复杂的卷积神经网络实现对cifar10的高精度分类(单模型95以上)，详细参数以及精度对比见文件夹内README.md
 
-    代码参考了Wei Li通过keras的实现[BIGBALLON/cifar-10-cnn][1]。
+    代码参考了Wei Li通过keras的实现[BIGBALLON/cifar-10-cnn][1]
 
     cifar10数据集在官网自行下载解压后将load_cifar函数的route参数改为存放解压文件的绝对路径即可，下载地址：[CIFAR-10 python version](http://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz)
 
@@ -64,6 +66,8 @@
 
       基于inception v3和resnet152 v1预训练模型通过迁移学习训练模型分类120种狗，使用原始数据集精度可达0.2673，使用stanford数据集精度可达0.0038，具体细节见文件夹内README.md
 
+    PS：网络环境不好时可复制下载链接（注意去掉最后三个点）丢到迅雷里面下载，然后把下载好的模型参数拷到/.mxnet/model文件夹下。
+
 4. gan（draft）
 
     generative adversarial networks / 生成对抗网络
@@ -76,23 +80,14 @@
 
       使用conditional gan生成mnist数字
 
-    - p2p_gan（draft）
-
-    - wgan（待补）
-
-    - so on ...
-
 5. detection（draft）
 
     object detection and semantic segmentation / 目标检测与语义分割
 
     - faster rcnn
-
     - ssd：Single Shot MultiBox Detector
-
-    - fcn
-
-    - mask rcnn
+    - yolo：You Only Look Once: Unified, Real-Time Object Detection
+    - fcn：Fully Convolutional Networks for Semantic Segmentation
 
 6. rnn：基本循环神经网络（draft）
 
@@ -106,28 +101,33 @@
 
 相关论文：
 
-1. [Gradient-Based Learning Applied to Document Recognition][8]
-2. [Deep Residual Learning for Image Recognition][3]
-3. [Identity Mappings in Deep Residual Networks][4]
+1. [Gradient-Based Learning Applied to Document Recognition][8] (Lenet)
+2. [Deep Residual Learning for Image Recognition][3] (Resnet)
+3. [Identity Mappings in Deep Residual Networks][4] (Resnet_v2)
 4. [Wide Residual Networks][5]
-5. [Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift][6]
+5. [Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks][11]
 6. [SSD: Single Shot MultiBox Detector][7]
-7. [Mask R-CNN][12]
-8. [Deep Reinforcement Learning: An Overview][13]
+7. [You Only Look Once: Unified, Real-Time Object Detection][20]
+8. [Fully Convolutional Networks for Semantic Segmentation][21]
 9. [Generative Adversarial Networks][15]
+10. [Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks][24]
+11. [Conditional Generative Adversarial Nets][14]
+12. [Deep Reinforcement Learning: An Overview][13]
+13. [Human-level control through deep reinforcement learning][23]
 
 扩展阅读：
 
 1. [ImageNet Classification with Deep Convolutional Neural Networks][9] (Alexnet)
 2. [Going Deeper with Convolutions][16] (Googlenet)
 3. [Very Deep Convolutional Networks for Large-Scale Image Recognition][17] (VGG)
-4. [Rich feature hierarchies for accurate object detection and semantic segmentation][10] (RCNN)
-5. [Fast R-CNN][18]
-6. [Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks][11]
-7. [Conditional Generative Adversarial Nets][14]
+4. [Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift][6]
+5. [Rich feature hierarchies for accurate object detection and semantic segmentation][10] (RCNN)
+6. [Fast R-CNN][18]
+7. [Mask R-CNN][12]
+8. [Image-to-Image Translation with Conditional Adversarial Networks][22]
 
 [1]: https://github.com/BIGBALLON/cifar-10-cnn
-[2]: https://www.bilibili.com/video/av14327359/?from=search&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;seid=4696511599201035761
+[2]: https://www.bilibili.com/video/av14327359/?from=search&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;seid=4696511599201035761
 [3]: https://arxiv.org/abs/1512.03385
 [4]: https://arxiv.org/abs/1603.05027
 [5]: https://arxiv.org/abs/1605.07146
@@ -145,3 +145,8 @@
 [17]: https://arxiv.org/abs/1409.1556
 [18]: https://arxiv.org/abs/1504.08083
 [19]: https://github.com/zackchase/mxnet-the-straight-dope
+[20]: https://arxiv.org/abs/1506.02640
+[21]: https://arxiv.org/abs/1411.4038
+[22]: https://arxiv.org/abs/1611.07004
+[23]: https://deepmind.com/research/publications/human-level-control-through-deep-reinforcement-learning/
+[24]: https://arxiv.org/abs/1511.06434
