@@ -1,6 +1,6 @@
 # 基本深度学习模型
 
-基于mxnet和gluon实现深度学习常用基本模型
+基于mxnet和gluon实现深度学习的一些最基本模型
 
 代码主要来自李沐博士与Aston博士开设的[动手学深度学习][2]课程以及mxnet官方[tutorial][19]
 
@@ -54,8 +54,6 @@
 
 3. transfer_learning：迁移学习
 
-    - prediction：利用预训练模型直接完成分类任务（待补）
-
     - fine tuning：微调预训练模型完成热狗分类
 
     - neural style：样式迁移
@@ -66,11 +64,9 @@
 
       基于inception v3和resnet152 v1预训练模型通过迁移学习训练模型分类120种狗，使用原始数据集精度可达0.2673，使用stanford数据集精度可达0.0038，具体细节见文件夹内README.md
 
-    PS：网络环境不好时可复制下载链接（注意去掉最后三个点）丢到迅雷里面下载，然后把下载好的模型参数拷到/.mxnet/model文件夹下。
+4. gan
 
-4. gan（draft）
-
-    generative adversarial networks / 生成对抗网络
+    generative adversarial networks / 生成对抗网络初步
 
     - conv_gan
 
@@ -80,24 +76,6 @@
 
       使用conditional gan生成mnist数字
 
-5. detection（draft）
-
-    object detection and semantic segmentation / 目标检测与语义分割
-
-    - faster rcnn
-    - ssd：Single Shot MultiBox Detector
-    - yolo：You Only Look Once: Unified, Real-Time Object Detection
-    - fcn：Fully Convolutional Networks for Semantic Segmentation
-
-6. rnn：基本循环神经网络（draft）
-
-    - rnn_base
-
-7. rl：reinforcement learning（draft）
-
-    - dqn
-
-    - ddqn
 
 相关论文：
 
@@ -127,7 +105,7 @@
 8. [Image-to-Image Translation with Conditional Adversarial Networks][22]
 
 [1]: https://github.com/BIGBALLON/cifar-10-cnn
-[2]: https://www.bilibili.com/video/av14327359/?from=search&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;seid=4696511599201035761
+[2]: https://www.bilibili.com/video/av14327359/?from=search&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;seid=4696511599201035761
 [3]: https://arxiv.org/abs/1512.03385
 [4]: https://arxiv.org/abs/1603.05027
 [5]: https://arxiv.org/abs/1605.07146
