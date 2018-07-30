@@ -6,10 +6,10 @@
 
   - style 1
 
-    ![](out_style1.png)
+    ![](out_style1.jpg)
   - style 2
 
-    ![](out_style2.png)
+    ![](out_style2.jpg)
 
 - kaggle 120 dogs
 
