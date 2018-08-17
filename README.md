@@ -6,6 +6,8 @@
 
 由衷感谢沐神和mxnet小伙伴们的无私奉献！
 
+## notebook版（旧版未修正）
+
 以下notebook仅需要按照沐神课程逐步安装gpu版的mxnet及其依赖便可直接运行
 
 1. from_strat：从零实现一个简单的图像分类器
@@ -77,7 +79,23 @@
       使用conditional gan生成mnist数字
 
 
-相关论文：
+## python版
+
+1. gradient decend基本
+2. batch gradient decend
+3. knn 分类cifar-10
+4. numpy+autograd实现mlp图像分类器
+5. gluon实现mlp图像分类器
+6. lenet
+7. 添加了图像增强的lenet
+8. resnet
+9. resnet 图像增强
+10. fine tuning
+11. neural style
+12. convolutional gan
+13. fcn/ssd/yolo/rnn系（TODO）
+
+## 相关论文：
 
 1. [Gradient-Based Learning Applied to Document Recognition][8] (Lenet)
 2. [Deep Residual Learning for Image Recognition][3] (Resnet)
@@ -105,7 +123,7 @@
 8. [Image-to-Image Translation with Conditional Adversarial Networks][22]
 
 [1]: https://github.com/BIGBALLON/cifar-10-cnn
-[2]: https://www.bilibili.com/video/av14327359/?from=search&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;seid=4696511599201035761
+[2]: https://www.bilibili.com/video/av14327359/?from=search&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;seid=4696511599201035761
 [3]: https://arxiv.org/abs/1512.03385
 [4]: https://arxiv.org/abs/1603.05027
 [5]: https://arxiv.org/abs/1605.07146
